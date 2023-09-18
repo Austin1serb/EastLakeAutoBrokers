@@ -4,24 +4,24 @@ module.exports = {
         res.json({message: "Test response!"});
     },
     getAll: (req, res) => {
-        Notes.find()
+        Cars.find()
             .then(data=>{res.json(data)})
             .catch(err=>res.json(err))
     },
     getOne: (req, res) => {
-        Notes.findOne({_id: req.params.id})
+        Cars.findOne({_id: req.params.id})
             .then(data=>{
                 res.json(data)
             }).catch(err=>res.json(err))
     },
     createOne: (req, res) => {
-        Notes.create(req.body)
+        Cars.create(req.body)
             .then(data => {
                 res.json(data)
             }).catch(err=>res.status(400).json(err))
     },
     updateOne: (req, res) => {
-        Notes.findOneAndUpdate(
+        Cars.findOneAndUpdate(
                 {_id: req.params.id}, 
                 req.body,
                 {new: true, runValidators: true} )
@@ -30,7 +30,7 @@ module.exports = {
             }).catch(err=>res.status(400).json(err))
     },
     deleteOne: (req, res) => {
-        Notes.deleteOne({_id: req.params.id})
+        Cars.deleteOne({_id: req.params.id})
             .then(data=>{
                 res.json(data)
             }).catch(err=>res.json(err))
