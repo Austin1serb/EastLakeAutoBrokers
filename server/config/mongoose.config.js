@@ -4,7 +4,6 @@ const password = process.env.ATLAS_PASSWORD;
 const cluster = process.env.ATLAS_CLUSTER
 const dbName = process.env.ATLAS_DB;
 const url = `mongodb+srv://${username}:${password}@${cluster}.mongodb.net/${dbName}?retryWrites=true&w=majority`;
-// const url = 'mongodb+srv://serbaustin:asd123@cluster0.miragf2.mongodb.net/east-lake-auto?retryWrites=true&w=majority'
 mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
