@@ -8,7 +8,6 @@ const port = process.env.PORT;
 
 app.use(cors(),express.json(),express.urlencoded({ extended: true }));
 
-//! Update routes name
-// require('./routes/cars.routes')(app);
+require('./routes/dealerships.routes')(app);
 
 app.listen(port, () => console.log(`Listening on port: ${port}`) );
