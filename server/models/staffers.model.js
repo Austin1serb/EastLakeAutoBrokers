@@ -25,7 +25,8 @@ const StaffersSchema = new mongoose.Schema({
     },
     email: {
         type: String,
-        required: [validateEmail, 'Please fill a valid email address']
+        required: [true, 'Please provide email address'],
+        match: [/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/, "Please provide a valid email address."]
     },
     bio: {
         type: String,
