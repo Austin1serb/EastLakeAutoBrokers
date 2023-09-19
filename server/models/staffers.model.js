@@ -19,9 +19,9 @@ const StaffersSchema = new mongoose.Schema({
         minlength: [2, "Position must be at least 2 characters long"]
     },
     phoneNumber: {
-        type: Number,
+        type: String,
         required: [true, "Please provide a phone number"],
-        match: [/^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/, "Please provide a valid phone number"]
+        match: [/^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/, "Please use this format: +1 (123) 123-4567"]
     },
     email: {
         type: String,
