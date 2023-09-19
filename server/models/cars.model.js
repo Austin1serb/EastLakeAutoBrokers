@@ -54,9 +54,11 @@ const CarsSchema = new mongoose.Schema({
         minlength: [2, "Transmission type must be at least 2 characters long"]
     },
     vin: {
-        type: Number,
-        min: [0, "Number cannot be negative"], 
-        required: [true, "VIN number is required"]
+        type: String,
+        required: [true, "VIN number is required"],
+        minlength: [17, "VIN number must be 17-characters"],
+        maxlength: [17, "VIN number must be 17-characters"], 
+        match: [/\b[(A-H|J-N|P|R-Z|0-9)]{17}\b/gm, "Please provide a valid VIN number"]
     },
     engine: {
         type: String,
@@ -69,6 +71,9 @@ const CarsSchema = new mongoose.Schema({
     stockNumber: {
         type: Number,
         min: [0, "Number cannot be negative."]
+    },
+    fuelEconomy: {
+        type: String,
     }
 
 }, {timestamps: true})
