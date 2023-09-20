@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Add your custom styles here */
+@media (max-width: 1620px) {
+  header .wrap {
+    padding: 0 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header > .wrap {
+  position: relative;
+  max-width: 1360px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: "GillSans";
+  background: #222;
+  color: #fff;
+  -webkit-overflow-scrolling: touch;
+  font-size: 14px;
+  line-height: 1;
 }
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Reset default styles for elements */
+body,
+div,
+span,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Apply font styles and background color to specific elements */
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* You can add more specific styles for your navigation bar elements here */

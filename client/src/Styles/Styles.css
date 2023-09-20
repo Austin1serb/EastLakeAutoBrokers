@@ -1,0 +1,405 @@
+/* Navbar styles */
+.navbar {
+    font-family: "Soho-Gothic-Light", arial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.95));
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background 0.3s ease, opacity 0.3s ease-out;
+    /* Add opacity transition */
+}
+
+.navbar-black {
+    background: rgba(0, 0, 0, 0.95);
+    transition: background 0.3s ease, opacity 0.3s ease-out;
+    /* Add opacity transition */
+    opacity: 0.9;
+    /* Set initial opacity to fade out slowly */
+}
+
+/* Default styles for .logo-image */
+.logo-image {
+    max-width: 60%;
+    /* Set the maximum width */
+    height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .logo-image {
+        min-width: 90px;
+        /* Reduce the maximum width for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 420px) {
+    .logo-image {
+        min-width: 90px;
+        /* Further reduce the maximum width for very small screens */
+        margin-right: -50px;
+    }
+}
+
+@media(max-width:330px) {
+    .navbar-top {
+        margin-left: -30px;
+    }
+}
+
+@media(max-width:380px) {
+    .logo-image {
+        display: none;
+    }
+}
+
+/* Add more media queries as needed for different screen sizes */
+
+
+.navigation-logo {
+    width: 16px;
+
+}
+
+.phone-logo {
+    margin-right: 5px;
+    width: 16px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 20px;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Default styles for .navbar-right */
+.navbar-right {
+    margin-left: 40px;
+    /* Set your default margin */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 900px) {
+    .navbar-right {
+        display: flex;
+
+    }
+}
+
+.navbar-top {
+    display: flex;
+}
+
+.navbar-top a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar-bottom a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    /* Add transition effect for smoother hover */
+    border-bottom: 2px solid transparent;
+    /* Initial transparent bottom border */
+}
+
+.navbar-bottom a:hover {
+    padding-bottom: 10px;
+    /* Add padding at the bottom on hover */
+    border-bottom: 2px solid white;
+    /* White bar on hover */
+    transition: 0.3s border-bottom ease-in;
+    /* Add transition for border-bottom property */
+}
+
+/* Additional styles for your new structure */
+.navbar-box {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    /* Add space at the bottom of the content */
+    background-color: transparent;
+}
+
+.navbar-address,
+.navbar-phone {
+    margin-right: 30px;
+}
+
+.navbar-bottom {
+    background-color: transparent;
+    list-style-type: none;
+}
+
+.navbar-bottom ul {
+    margin-left: -6.5%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar-bottom li {}
+
+/* Hamburger menu icon styles */
+.mobile-menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 25px;
+    /* Ensure it's above other content */
+}
+
+.mobile-menu-icon .bar {
+    width: 40px;
+    height: 4px;
+    background-color: #E84B3C;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+/* Rotate the top bar */
+.menu-bars.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+/* Rotate the middle bar to make it disappear */
+.menu-bars.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+/* Rotate the bottom bar */
+.menu-bars.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6.5px, -7.8px);
+}
+
+@keyframes rollIn {
+    0% {
+        transform: scaleY(0);
+        /* Start with no height (scaled to 0) */
+    }
+
+    100% {
+        transform: scaleY(1);
+        /* End with full height (scaled to 1) */
+    }
+}
+
+
+/*full-screen overlay */
+
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    z-index: 999;
+    /* Ensure it's above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rollIn 0.5s ease;
+    /* Use the 'rollIn' animation */
+}
+
+
+/* Modify the mobile-dropdown styles */
+.mobile-dropdown {
+    margin: 50px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.navbar-bottom-mobile {
+    margin: 40px;
+}
+
+
+
+
+/* HOME PAGE CSS */
+.main-page {
+    background-color: black;
+}
+
+
+/* BOXES */
+/* Styles for the boxes container */
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute space between the boxes */
+
+
+}
+
+
+/* Styles for each individual square box */
+.box {
+    flex: 1;
+    /* Each box takes an equal portion of the available space */
+    width: 25%;
+    /* Set the width to 25% to create equilateral squares */
+    padding-top: 25%;
+    /* Set the padding-top to match the width for square aspect ratio */
+    background-color: #f0f0f0;
+    /* Set background color */
+    box-sizing: border-box;
+    /* Include padding and border in the box size */
+    border: 3px solid black;
+    /* Add a border */
+    text-align: center;
+    /* Center the content horizontally */
+}
+
+/* Media query for screens 991px or larger */
+@media (max-width: 768px) {
+    .boxes-container {
+        flex-wrap: wrap;
+        /* Display boxes as two on top of two */
+    }
+
+    .box {
+        width: 48%;
+        /* Set the width to 48% for two on top of two */
+        padding-top: 48%;
+        /* Set the padding-top to match the width for square aspect ratio */
+    }
+}
+
+/* Media query for screens 769px or smaller */
+@media (max-width: 768px) {
+    .boxes-container {
+        flex-direction: column;
+        /* Stack the boxes vertically */
+    }
+
+    .box {
+        width: 100%;
+        /* Make each box take the full width */
+        padding-top: 100%;
+        /* Adjust padding-top to maintain the square aspect ratio */
+    }
+}
+
+
+.first-box {
+    background-image: url('../assets/inventory.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 0.3s ease;
+    /* Add a smooth transform transition */
+}
+.second-box {
+    background-image: url('../assets/finance1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 0.3s ease;
+    /* Add a smooth transform transition */
+}
+.third-box {
+    background-image: url('../assets/contact.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 0.3s ease;
+    /* Add a smooth transform transition */
+}
+.fourth-box {
+    background-image: url('../assets/about2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 0.3s ease;
+    /* Add a smooth transform transition */
+}
+
+.first-box::before, .second-box::before, 
+.third-box::before, .fourth-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s ease;
+    /* Add a smooth opacity transition for the overlay */
+}
+
+.first-box:hover, .second-box:hover, 
+.third-box:hover, .fourth-box:hover {
+    transform: scale(1.05);
+    /* Scale the box by 5% on hover */
+}
+
+.first-box:hover::before, .second-box:hover::before, 
+.third-box:hover::before, .fourth-box:hover::before {
+    opacity: 0.5;
+    /* Make the overlay fully transparent on hover */
+}
+
+
+.box-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+.box-text {
+    line-height: 1.2;
+    color: white;
+
+
+
+}
+
+.box-text-red{
+
+}
+
+.red-text {
+    font-size: 20px;
+    color: red;
+    font-weight: lighter;
+}
+
+.white-text {
+
+    color: white;
+    font-weight: bold;
+}
