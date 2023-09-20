@@ -30,11 +30,11 @@ function Slideshow() {
                     <img
                         key={index}
                         src={image}
-                        alt={`Image ${index + 1}`}
+                        alt={`pic ${index + 1}`}
                         style={{
                             display: index === currentIndex ? 'block' : 'none',
                             width: '100%', // Set the image width to 100%
-  
+
                             objectFit: 'cover', // Maintain aspect ratio and cover the container
                         }}
                     />
