@@ -11,11 +11,12 @@ const BodyTypes = () => {
             </div>
             <div className="body-types-grid">
                 <div className="body-type-box">
-                    <a href="/sedans">
+                    <a href="/sedans" >
                         <img src={require('../assets/sedan1.jpeg')} alt="Sedans" className='image-default' />
                         <img src={require('../assets/sedan.jpeg')} alt="Sedans" className="image-hover" />
                     </a>
-                    <p>Sedans</p>
+                        <p >Sedans</p>
+
                 </div>
                 <div className="body-type-box">
                     <a href="/coupes">

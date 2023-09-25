@@ -17,7 +17,7 @@ const SearchBar = () => {
                     <option value="">Model</option>
                 </select>
                 <select name="" id="">
-                    <option value="">Body</option>
+                    <option value="">Price</option>
                 </select>
                 {/* Add year options dynamically */}
 
