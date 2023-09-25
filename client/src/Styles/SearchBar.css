@@ -36,7 +36,7 @@ input {
 }
 
 button.search-button {
-  background-color: #E84B3C;
+  background-color: #D94335;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -44,10 +44,11 @@ button.search-button {
   cursor: pointer;
   font-weight: bold;
   margin-bottom: 10px;
+  transition: background-color 0.5s ease;
 }
 
 button.search-button:hover {
-  background-color: #D94335;
+  background-color: purple;
 }
 
 @media (max-width: 640px) {

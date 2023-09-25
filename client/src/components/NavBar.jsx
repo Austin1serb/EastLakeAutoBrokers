@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import '../Styles/Styles.css';
-import locationPin from '../assets/red-location-pin.png';
-import phoneLogo from '../assets/red-phone.png';
+
+import PhoneIcon from '@mui/icons-material/Phone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Navbar = () => {
     const [scrolling, setScrolling] = useState(false);
@@ -53,15 +54,13 @@ const Navbar = () => {
                         <div className="navbar-address">
                             <a href="/address">
                                 {isMobile ? (
-                                    <img
-                                        className='navigation-logo-mobile'
-                                        style={{ width: '50px', marginRight: '10px' }}
-                                        src={locationPin}
-                                        alt="Address"
+                                    <LocationOnIcon
+                                        className='navigation-logo'
+                                        style={{ fontSize: '50px', marginRight: '10px' }}
                                     />
                                 ) : (
                                     <>
-                                        <img className='navigation-logo' src={locationPin} alt="Address" />
+                                        <LocationOnIcon className='navigation-logo' />
                                         13105 NE 124th St Kirkland, WA 98034
                                     </>
                                 )}
@@ -70,15 +69,13 @@ const Navbar = () => {
                         <div className="navbar-phone">
                             <a href="tel:+4258231500">
                                 {isMobile ? (
-                                    <img
-                                        className='phone-logo-mobile'
-                                        style={{ width: '50px', marginRight: '10px' }}
-                                        src={phoneLogo}
-                                        alt="Phone"
+                                    <PhoneIcon
+                                        className='phone-logo'
+                                        style={{ fontSize: '50px', marginRight: '10px' }}
                                     />
                                 ) : (
                                     <>
-                                        <img className='phone-logo' src={phoneLogo} alt="Phone" />
+                                        <PhoneIcon className='phone-logo' />
                                         425-823-1500
                                     </>
                                 )}

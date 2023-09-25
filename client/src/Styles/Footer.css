@@ -1,0 +1,168 @@
+/* Footer styles */
+.footer-container {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+
+    flex: 1;
+    max-width: 50%;
+}
+
+.footer-left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+@media(max-width:500px) {
+    .footer-container {
+        display: inline-table;
+
+    }
+
+    .footer-center {
+        margin-right: 40%;
+    }
+}
+
+
+.footer-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-center a {
+    font-weight: bold;
+    color: #e84b3c;
+    margin-bottom: 65px;
+    margin-right: 15%;
+    font-size: larger;
+
+}
+
+.footer-center a:hover {
+    color: purple;
+    transition: color 0.3s ease;
+}
+
+.location-icon:hover {
+    color: purple;
+    transition: color 0.3s ease;
+}
+
+.contact-button {
+    background-color: #e84b3c;
+    color: white;
+    padding: 15px 8px;
+    margin-top: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: purple;
+    transition: background-color 0.3s ease;
+}
+
+
+.facebook-link a {
+    size: 20px;
+    color: #fff;
+    font-size: 48px;
+    padding-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.facebook-link a:hover {
+    color: #1877f2;
+}
+
+.contact-facebook {
+    display: flex;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-hours h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.footer-hours ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-hours li {
+    margin-bottom: 5px;
+}
+
+.footer-copyright {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* Add some top margin to separate it from other content */
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    /* Adjust the font size as needed */
+}
+
+.footer-copyright .footer-links {
+    margin-top: 10px;
+    /* Add some top margin to separate it from the copyright text */
+}
+
+.footer-copyright .footer-links a {
+    color: #e84b3c;
+    text-decoration: none;
+    margin-right: 10px;
+    /* Add some spacing between links */
+    transition: color 0.5s ease;
+}
+
+.footer-copyright .footer-links a:hover {
+    color: purple;
+    /* Hover color for links */
+}
+
+footer {
+    background-color: black;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+footer a {
+    margin-left: -5px;
+}
+
+.container{
+    background-color: black;
+
+}

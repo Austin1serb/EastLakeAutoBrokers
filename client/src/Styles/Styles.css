@@ -1,3 +1,5 @@
+
+
 /* Navbar styles */
 .navbar {
     font-family: "Soho-Gothic-Light", arial;
@@ -64,13 +66,24 @@
 
 .navigation-logo {
     width: 16px;
+    color: #E84B3C;
 
+}
+.navigation-logo :hover {
+    color: purple;
+    transition: color 0.5s ease;
 }
 
 .phone-logo {
     margin-right: 5px;
     width: 16px;
+    color: #E84B3C;
 }
+.phone-logo :hover {
+    color: purple;
+    transition: color 0.5s ease;
+}
+
 
 .navbar-left {
     display: flex;
@@ -126,7 +139,7 @@
 .navbar-bottom a:hover {
     padding-bottom: 10px;
     /* Add padding at the bottom on hover */
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid #E84B3C;
     /* White bar on hover */
     transition: 0.3s border-bottom ease-in;
     /* Add transition for border-bottom property */
@@ -143,6 +156,14 @@
 .navbar-address,
 .navbar-phone {
     margin-right: 30px;
+}
+.navbar-phone:hover svg {
+    transition: color 0.5s ease;
+    color: purple;
+}
+.navbar-address:hover svg {
+    transition: color 0.5s ease;
+    color: purple;
 }
 
 .navbar-bottom {
@@ -263,14 +284,12 @@
     flex: 1;
     /* Each box takes an equal portion of the available space */
     width: 25%;
-    /* Set the width to 25% to create equilateral squares */
+    /* Set width to 25% to create equilateral squares */
     padding-top: 25%;
-    /* Set the padding-top to match the width for square aspect ratio */
-    background-color: #f0f0f0;
-    /* Set background color */
+    /* Set padding-top to match the width for square aspect ratio */
     box-sizing: border-box;
     /* Include padding and border in the box size */
-    border: 3px solid black;
+    border: 5px solid black;
     /* Add a border */
     text-align: center;
     /* Center the content horizontally */
@@ -359,7 +378,9 @@
 
 .first-box:hover, .second-box:hover, 
 .third-box:hover, .fourth-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    transform: scaleY(1.05);
+
     /* Scale the box by 5% on hover */
 }
 
@@ -388,13 +409,10 @@
 
 }
 
-.box-text-red{
-
-}
 
 .red-text {
     font-size: 20px;
-    color: red;
+    color: #E84B3C;
     font-weight: lighter;
 }
 

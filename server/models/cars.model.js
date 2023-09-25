@@ -9,9 +9,9 @@ const CarsSchema = new mongoose.Schema({
         required : [true, "Please provide the address for the image"]
     },
     description: {
-        conditionNew: {
-            type: Boolean,
-            default: false
+        price: {
+            type: Number,
+            min:[0,"Number cannot be negative."]
         },
         mileage: {
             type: Number,
