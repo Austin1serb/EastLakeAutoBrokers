@@ -1,0 +1,33 @@
+.custom-checkbox {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.compare-text {
+    margin-left: 8px;
+}
+
+.unchecked-icon {
+    width: 20px;
+    height: auto;
+    transition: color 0.3s ease;
+    /* Add a color transition */
+}
+
+.checked-icon {
+    width: 20px;
+    height: auto;
+    color: red;
+    transition: color 0.3s ease;
+
+    /* Add a color transition */
+}
+
+/* Change icon color to red on hover */
+.custom-checkbox:hover .unchecked-icon {
+    color: red;
+}
+

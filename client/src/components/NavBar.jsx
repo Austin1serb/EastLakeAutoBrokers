@@ -60,7 +60,7 @@ const Navbar = () => {
                                     />
                                 ) : (
                                     <>
-                                        <LocationOnIcon className='navigation-logo' />
+                                        <LocationOnIcon className='navigation-logo'  />
                                         13105 NE 124th St Kirkland, WA 98034
                                     </>
                                 )}

@@ -3,7 +3,6 @@ import Slideshow from '../components/Slideshow'
 import Boxes from './Boxes'
 import SearchBar from './SearchBar'
 import BodyTypes from './BodyTypes'
-import Footer from './Footer'
 
 const Home = () => {
     return (

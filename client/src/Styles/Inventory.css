@@ -1,48 +1,77 @@
+/* Inventory.css */
 .search-bar {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
-/* Inventory.css */
 .inventory-container {
+    font-family: 'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
     padding: 20px;
     background-color: black;
     color: white;
+    overflow: hidden;
+    /* Clear floats from the floated inventory-boxes */
 }
 
 .inventory-box {
-    border: 1px solid #ccc;
+    height: 100%;
+    border: 1px solid black;
     padding: 20px;
     margin: 10px;
-    background-color: black;
+    background-color: rgb(46, 46, 46);
     color: white;
-    width: 23%;
+    width: calc(25% - 40px);
     /* Adjust the width to fit 4 cars per row */
     float: left;
+    box-sizing: border-box;
+    /* Include padding and border in the box sizing */
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center-align elements horizontally */
+    text-align: center;
+    /* Center-align text */
+}
+
+.car-image-container {
+    width: 100%;
+    /* Ensure the image takes full width */
 }
 
 .car-name {
     font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Add margin to create space between car name and image */
 }
 
 .car-image {
     max-width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    /* Add margin to create space between image and car info */
 }
 
 .car-info {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+
 }
 
 .car-price,
 .car-miles {
-    flex: 1;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 .car-details-button {
-    background-color: red;
+    margin: 20px;
+    font-weight: bold;
+    width: 100%;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: #E84B3C;
     color: white;
     border: none;
     padding: 10px;
@@ -50,5 +79,96 @@
 }
 
 .car-details-button:hover {
-    background-color: darkred;
+    background-color: purple;
+    transition: background-color 0.5s ease;
+}
+
+.compare-label {
+    display: flex;
+}
+
+
+.compare-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    /* Transparent black background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease;
+    /* Use transitions for sliding and fading */
+}
+
+.compare-navbar.visible {
+    max-height: 200px;
+    /* Adjust the max-height to accommodate content */
+    opacity: 1;
+    /* Fade in */
+}
+
+
+.clear-all-button, .compare-button {
+    margin-left: 10%;
+    background-color: #E84B3C;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.clear-all-button:hover, .compare-button:hover {
+    background-color: purple;
+    transition: background-color 0.5s ease;
+}
+
+.bottom-box{
+    display: flex;
+    align-items: center;
+}
+.sendtophonebutton{
+    padding: 10px;
+}
+/* Clear floats after every fourth car to ensure 4 cars per row */
+/* For screens wider than or equal to 1200px, display 4 cars per row */
+@media screen and (min-width: 1200px) {
+    .inventory-box {
+        width: calc(25% - 40px);
+        /* Adjust the width to fit 4 cars per row */
+    }
+}
+
+/* For screens between 992px and 1199px, display 3 cars per row */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .inventory-box {
+        width: calc(33.33% - 40px);
+        /* Adjust the width to fit 3 cars per row */
+    }
+}
+
+/* For screens between 768px and 991px, display 2 cars per row */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .inventory-box {
+        width: calc(50% - 40px);
+        /* Adjust the width to fit 2 cars per row */
+    }
+}
+
+/* For screens below 768px, display 1 car per row */
+@media screen and (max-width: 767px) {
+    .inventory-box {
+        width: calc(100% - 40px);
+        /* Adjust the width to fit 1 car per row */
+    }
+}
+@media screen and (max-width: 767px){
+    .search-bar{
+     
+    }
 }
