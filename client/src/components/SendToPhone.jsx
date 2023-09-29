@@ -1,53 +1,65 @@
+import { FaRegCommentAlt, FaArrowRight } from 'react-icons/fa';
 import React, { useState } from 'react';
-import { FaAddressBook } from 'react-icons/fa';
+import '../Styles/SendToPhone.css'
+
+
 
 const SendToPhone = ({ car }) => {
-  const [showForm, setShowForm] = useState(false);
-  const [phoneNumber, setPhoneNumber] = useState('');
+    const [showForm, setShowForm] = useState(false);
+    const [phoneNumber, setPhoneNumber] = useState('');
 
-  const handlePhoneNumberChange = (e) => {
-    setPhoneNumber(e.target.value);
-  };
+    const handlePhoneNumberChange = (e) => {
+        setPhoneNumber(e.target.value);
+    };
 
-  const handleSendText = () => {
-    // Implement the logic to send a text message with the car link to the entered phone number
-    // You can use a third-party SMS service or an API to send the text message
-    // Example: sendTextMessage(phoneNumber, car.link);
+    const handleSendText = () => {
+        // Implement the logic to send a text message with the car link to the entered phone number
+        // You can use a third-party SMS service or an API to send the text message
+        // Example: sendTextMessage(phoneNumber, car.link);
 
-    // Clear the phone number input after sending the text
-    setPhoneNumber('');
-  };
+        // Clear the phone number input after sending the text
+        setPhoneNumber('');
+    };
 
-  const toggleForm = () => {
-    setShowForm(!showForm);
-  };
+    const toggleForm = () => {
+        setShowForm(!showForm);
+    };
 
-  return (
-    <div   >
-      {!showForm ? (
-        <div style={{alignItems: 'center', cursor: 'pointer'}}  className='send-to-phone' >
-          <span  onClick={toggleForm}>
-            <FaAddressBook/>
-            Send to Phone</span>
+    return (
+        <div>
+            <div className='send-to-phone'>
+                {!showForm ? (
+                    <span onClick={toggleForm}>
+                        <FaRegCommentAlt className="text1-icon" />
+                        Send to Phone
+                    </span>
+                ) : (
+                    <span onClick={toggleForm}>
+                        <FaRegCommentAlt className="text1-icon" />
+                        Send to Phone
+                    </span>
+                )}
+            </div>
+            {showForm && (
+                <div className="send-to-phone-form" style={{ position: 'absolute' }}>
+                    <div className="send-to-phone-input">
+                        <input
+                            type="text"
+                            placeholder="000-000-0000"
+                            value={phoneNumber}
+                            onChange={handlePhoneNumberChange}
+                        />
+                    </div>
+                    <div >
+                        <button className="send-to-phone-buttons" onClick={handleSendText}>
+                            <FaArrowRight className='arrow-button'/>
+                        </button>
+                        {/*<span onClick={toggleForm}><GiCancel/></span>*/}
+                    </div>
+                </div>
+            )}
         </div>
-      ) : (
-        <div className="send-to-phone-form" style={{position:'absolute'}} >
-          <div className="send-to-phone-input">
-            <input
-              type="text"
-              placeholder="Enter Phone Number"
-              value={phoneNumber}
-              onChange={handlePhoneNumberChange}
-            />
-          </div>
-          <div className="send-to-phone-buttons">
-            <button onClick={handleSendText}>Send Text</button>
-            <span onClick={toggleForm}>Cancel</span>
-          </div>
-        </div>
-      )}
-    </div>
-  );
+    );
 };
 
 export default SendToPhone;

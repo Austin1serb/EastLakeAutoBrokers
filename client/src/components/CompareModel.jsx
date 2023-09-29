@@ -49,7 +49,7 @@ const CompareModal = ({ selectedCars, onClose }) => {
                             {selectedCarsData.map((car, index) => (
                                 <th className='car-images' key={index}>
                                     <img src={carImages[`car${index + 1}`]} alt={car.name} className="car-image" />
-                                    <button className='image-button' >VIEW VEHICLE</button>
+                                    <button className='view-button' >VIEW VEHICLE</button>
                                 </th>
                             ))}
                         </tr>
@@ -71,6 +71,36 @@ const CompareModal = ({ selectedCars, onClose }) => {
                             <td>Make</td>
                             {selectedCarsData.map((car, index) => (
                                 <td key={index}>{car.details.make}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            <td>Trim</td>
+                            {selectedCarsData.map((car, index) => (
+                                <td key={index}>{car.details.trim}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            <td>Mileage</td>
+                            {selectedCarsData.map((car, index) => (
+                                <td key={index}>{car.description.mileage}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            <td>Transmission</td>
+                            {selectedCarsData.map((car, index) => (
+                                <td key={index}>{car.description.transmission}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            <td>Engine</td>
+                            {selectedCarsData.map((car, index) => (
+                                <td key={index}>{car.description.engine}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            <td>VIN</td>
+                            {selectedCarsData.map((car, index) => (
+                                <td key={index}>{car.description.vin}</td>
                             ))}
                         </tr>
                         {/* Add more rows for other attributes */}

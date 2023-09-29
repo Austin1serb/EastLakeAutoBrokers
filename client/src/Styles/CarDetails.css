@@ -1,0 +1,123 @@
+/* Styles for CarDetails component */
+.blackout {
+    height: 120px;
+    background-color: black;
+}
+
+.car-details {
+    background-color: black;
+    padding: 20px;
+
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    /* Blue color for link */
+}
+
+.back-icon {
+    margin-right: 8px;
+}
+
+.car-details-name1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+    color: red;
+    font-size: 24px;
+}
+
+.car-image {
+    max-width: 98.5%;
+    /* Adjust the image size as needed */
+    height: auto;
+}
+
+.car-info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.car-details-top {
+    display: flex;
+
+}
+
+.car-price,
+.car-miles {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+
+
+.contact-details-button {
+    background-color: red;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-button-container {
+    display: flex;
+    padding: 20px;
+    /* Add padding as needed */
+}
+
+.car-buttons {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+    ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.test-drive-button {
+    position: relative;
+    top: -5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.test-drive-icon {
+    position: relative;
+    top: 5px;
+    left: -2px;
+    font-size: 24px;
+    transition: color 0.4s ease;
+}
+
+.test-drive-button:hover .test-drive-icon {
+    color: red;
+    /* Change the icon color on hover */
+}
+
+
+.car-description {
+    margin-top: 20px;
+    color: white;
+    /* Add additional styles for car description text */
+}
+
+@media(max-width:361px) {
+
+    .car-info-top p,
+    .car-info-top button {
+        font-size: 12px;
+
+    }
+}

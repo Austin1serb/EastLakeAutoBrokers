@@ -48,7 +48,7 @@ p {
 
 .footer-center a {
     font-weight: bold;
-    color: #e84b3c;
+    color: red;
     margin-bottom: 65px;
     margin-right: 15%;
     font-size: larger;
@@ -56,17 +56,17 @@ p {
 }
 
 .footer-center a:hover {
-    color: purple;
+    color: #9C0000;
     transition: color 0.3s ease;
 }
 
 .location-icon:hover {
-    color: purple;
+    color: #9C0000;
     transition: color 0.3s ease;
 }
 
 .contact-button {
-    background-color: #e84b3c;
+    background-color: red;
     color: white;
     padding: 15px 8px;
     margin-top: 7px;
@@ -78,7 +78,7 @@ p {
 }
 
 .contact-button:hover {
-    background-color: purple;
+    background-color: #9C0000;
     transition: background-color 0.3s ease;
 }
 
@@ -140,7 +140,7 @@ p {
 }
 
 .footer-copyright .footer-links a {
-    color: #e84b3c;
+    color: red;
     text-decoration: none;
     margin-right: 10px;
     /* Add some spacing between links */
@@ -148,7 +148,7 @@ p {
 }
 
 .footer-copyright .footer-links a:hover {
-    color: purple;
+    color: #9C0000;
     /* Hover color for links */
 }
 

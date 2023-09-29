@@ -60,7 +60,8 @@ const Navbar = () => {
                                     />
                                 ) : (
                                     <>
-                                        <LocationOnIcon className='navigation-logo'  />
+                                        <LocationOnIcon className='navigation-logo1' 
+                                        style={{ fontSize: '30px', marginRight: '10px' }} />
                                         13105 NE 124th St Kirkland, WA 98034
                                     </>
                                 )}
@@ -75,7 +76,9 @@ const Navbar = () => {
                                     />
                                 ) : (
                                     <>
-                                        <PhoneIcon className='phone-logo' />
+                                        <PhoneIcon className='phone-logo1'
+                                          style={{ fontSize: '30px', marginRight: '10px' }}
+                                         />
                                         425-823-1500
                                     </>
                                 )}

@@ -4,6 +4,7 @@ import CompareModal from './CompareModel';
 import SearchBar from './SearchBar';
 import CustomCheckbox from './CustomCheckBox'
 import SendToPhone from './SendToPhone';
+import { Link } from 'react-router-dom';
 const Inventory = () => {
   const [inventoryData, setInventoryData] = useState([]);
   const [selectedCars, setSelectedCars] = useState([]);
@@ -74,7 +75,7 @@ const Inventory = () => {
       <div className="inventory-boxes">
         {inventoryData.map((car, index) => (
           <div key={car._id} className="inventory-box">
-            <h3 className="car-name">{car.name}</h3>
+            <h1 className="car-name">{car.name}</h1>
             <div className="car-image-container">
               <img src={carImages[`car${index + 1}`]} alt={car.name} className="car-image" />
             </div>
@@ -83,7 +84,9 @@ const Inventory = () => {
               <p className="car-price">Price: <br /> ${car.description.price}</p>
               <p className="car-miles">Mileage: <br /> {car.description.mileage}</p>
             </div>
-            <button className="car-details-button">Car Details</button>
+            <Link to={`/details/${car._id}`} className="car-details-button">
+              Car Details
+            </Link>
             <div className="bottom-box">
               <CustomCheckbox
                 className='compare-checkbox'

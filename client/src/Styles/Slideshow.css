@@ -1,0 +1,42 @@
+/* Styles for the Slideshow component */
+
+.slides {
+    position: relative;
+  }
+  
+  .slideshow-image {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  .slideshow-image.show {
+    opacity: 1;
+  }
+  .slideshow-container{
+    margin-bottom: 51%;
+  }
+  .slide-container{
+    position: relative;
+  }
+  .slide-number {
+    text-decoration: underline;
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+    right: 10px;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    transition: color 1s ease;
+    
+  }
+  .active{
+    color: red;
+    transition: color 1s ease;
+    text-decoration: underline;
+    
+  }

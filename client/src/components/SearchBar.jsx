@@ -4,7 +4,7 @@ import '../Styles/SearchBar.css';
 const SearchBar = () => {
     return (
         <div className="search-bar">
-            <h2>Find Your Next Car</h2>
+            <h2 className='search-header' >Find Your Next Car</h2>
             <div className="search-options">
                 <select>
                     {/* Year options */}
@@ -21,7 +21,7 @@ const SearchBar = () => {
                 </select>
                 {/* Add year options dynamically */}
 
-                <input type="text" placeholder="VIN or Keyword" />
+                <input className='text-field' type="text" placeholder="VIN or Keyword" />
                 <button className="search-button">Search</button>
             </div>
         </div>

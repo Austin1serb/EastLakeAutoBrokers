@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Inventory from './components/Inventory';
 import Footer from './components/Footer';
 import FinanceForm from './components/FinanceForm';
+import CarDetails from './components/CarDetails';
 
 
 
@@ -20,6 +21,8 @@ const App = () => {
         </Route>
         <Route exact path='/inventory' Component={Inventory}/>
         <Route exact path='/finance' Component={FinanceForm}/>
+        <Route exact path='/details/:carId' Component={CarDetails}/>
+      
       </Routes>
       <Footer />
     </>

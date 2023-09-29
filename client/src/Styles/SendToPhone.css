@@ -1,0 +1,76 @@
+/* styles.css */
+
+.send-to-phone {
+    cursor: pointer;
+    color: white;
+    /* Change the text color to white */
+    align-items: center;
+    width: 140%;
+    margin-left: -30px;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+    /* Add a color transition effect */
+}
+
+
+
+.text1-icon {
+    margin-right: 5px;
+    /* Add margin to the right of the icon for spacing */
+    position: relative;
+    top: 5px;
+    left: -3px;
+    color: white;
+    font-size: 19px;
+    transition: color 0.3s ease;
+    /* Add a color transition effect */
+}
+
+.send-to-phone:hover .text1-icon,
+.text1-icon:hover {
+    color: red;
+    /* Change the text color to red on hover */
+}
+
+
+
+.send-to-phone-form {
+    display: flex;
+}
+
+.send-to-phone-buttons {
+
+    font-size: 20px;
+
+}
+
+.arrow-button {
+    position: relative;
+    top: 2.55px;
+    color: white;
+    font-size: 24px;
+}
+
+input {
+    font-size: 10px;
+    
+
+}
+
+.send-to-phone-buttons {
+    position: relative;
+    left: -14px;
+    font-size: 27.3px;
+    cursor: pointer;
+    background-color: red;
+    border-end-end-radius: 5px;
+    border-top-right-radius: 5px;
+    border-color: red;
+    transition: background-color 0.5s ease;
+    border: none;
+}
+
+.send-to-phone-buttons:hover {
+    transition: background-color 0.5s ease;
+    background-color: #9C0000;
+}

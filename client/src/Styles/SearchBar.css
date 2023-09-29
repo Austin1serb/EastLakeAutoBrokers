@@ -1,7 +1,7 @@
 /* SearchBar.css */
 
 .search-bar {
-
+margin-top:40px ;
   color: white;
   background-color: black;
   padding: 20px;
@@ -16,7 +16,7 @@
   margin-top: 20px;
 }
 
-h2 {
+.search-header {
   text-align: left;
   margin: 0;
   font-size: 24px;
@@ -35,25 +35,53 @@ input {
   width: 50%;
 }
 
+.text-field {
+  font-size: 14px;
+}
+
 button.search-button {
-  background-color: #D94335;
+  background-color: red;
   color: white;
-  padding: 10px 20px;
+  padding: 9.5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
+  font-size: 18px;
   margin-bottom: 10px;
+  margin-left: 15px;
   transition: background-color 0.5s ease;
 }
 
 button.search-button:hover {
-  background-color: purple;
+  background-color: #9C0000;
 }
 
 @media (max-width: 640px) {
   .search-options {
     flex-direction: column;
     /* Stack elements vertically */
+  }
+  .text-field{
+    width: 96%;
+  }
+}
+@media (max-width: 540px){
+  .text-field{
+    width: 95%;
+  }
+@media (max-width: 440px){
+  .text-field{
+    width: 94%;
+  }
+}
+@media (max-width: 340px){
+  .text-field{
+    width: 92%;
+  }
+}
+}
+@media (max-width: 290px){
+  .text-field{
+    width: 89%;
   }
 }

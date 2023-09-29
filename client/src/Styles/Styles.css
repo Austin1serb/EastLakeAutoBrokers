@@ -1,12 +1,10 @@
 
-
 /* Navbar styles */
 .navbar {
     font-family: "Soho-Gothic-Light", arial;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.95));
     position: fixed;
     top: 0;
@@ -34,29 +32,30 @@
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
-    .logo-image {
-        min-width: 90px;
-        /* Reduce the maximum width for smaller screens */
+
+    .navbar-top {
+        margin-right: -15px; /* Adjust the margin as needed */
+    }
+    .navbar-phone {
+        margin-left: -5%; /* Adjust the margin as needed */
     }
 }
 
 /* Media query for even smaller screens */
-@media (max-width: 420px) {
+@media (max-width: 460px) {
     .logo-image {
-        min-width: 90px;
-        /* Further reduce the maximum width for very small screens */
-        margin-right: -50px;
+        width: 40%; /* Adjust the width percentage as needed */
+        min-width: 45%;
     }
-}
-
-@media(max-width:330px) {
     .navbar-top {
-        margin-left: -30px;
+        margin-right: -25px; /* Adjust the margin as needed */
+    }
+    .navbar-phone {
+        margin-left: -5%; /* Adjust the margin as needed */
     }
 }
-
-@media(max-width:330px) {
-    .logo-image {
+@media (max-width: 365px) {
+    .logo-image{
         display: none;
     }
 }
@@ -65,22 +64,33 @@
 
 
 .navigation-logo {
-    width: 16px;
-    color: #E84B3C;
+    color: red;
 
 }
+.navigation-logo1 {
+    position: relative;
+    top:5px;
+    color: red;
+
+}
+
 .navigation-logo :hover {
-    color: purple;
+    color: #9C0000;
     transition: color 0.5s ease;
 }
 
 .phone-logo {
     margin-right: 5px;
     width: 16px;
-    color: #E84B3C;
+    color: red;
+}
+.phone-logo1{
+    color: red;
+    position: relative;
+    top: 5px;
 }
 .phone-logo :hover {
-    color: purple;
+    color: #9C0000;
     transition: color 0.5s ease;
 }
 
@@ -93,7 +103,9 @@
 .navbar-logo {
     font-size: 1.5rem;
     color: white;
-    margin-right: 20px;
+    margin-right: -175px;
+    margin-left: 10px;
+
 }
 
 .navbar-logo a {
@@ -108,11 +120,15 @@
 }
 
 /* Media query for mobile screens */
-@media (max-width: 900px) {
+@media (max-width: 901px) {
     .navbar-right {
         display: flex;
 
     }
+    .logo-image{
+        margin-top: 18px;
+    }
+
 }
 
 .navbar-top {
@@ -139,7 +155,7 @@
 .navbar-bottom a:hover {
     padding-bottom: 10px;
     /* Add padding at the bottom on hover */
-    border-bottom: 3px solid #E84B3C;
+    border-bottom: 3px solid red;
     /* White bar on hover */
     transition: 0.3s border-bottom ease-in;
     /* Add transition for border-bottom property */
@@ -162,11 +178,11 @@
 }
 .navbar-phone:hover svg {
     transition: color 0.5s ease;
-    color: purple;
+    color: #9C0000;
 }
 .navbar-address:hover svg {
     transition: color 0.5s ease;
-    color: purple;
+    color: #9C0000;
 }
 
 .navbar-bottom {
@@ -192,11 +208,16 @@
     padding: 25px;
     /* Ensure it's above other content */
 }
+.mobile-menu-icon:hover{
+    .bar{
+        background-color: #9C0000;
+    }
+}
 
 .mobile-menu-icon .bar {
     width: 40px;
     height: 4px;
-    background-color: #E84B3C;
+    background-color: red;
     margin: 5px 0;
     transition: 0.5s;
 }
@@ -415,7 +436,7 @@
 
 .red-text {
     font-size: 20px;
-    color: #E84B3C;
+    color: red;
     font-weight: lighter;
 }
 
