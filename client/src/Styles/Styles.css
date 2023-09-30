@@ -293,7 +293,6 @@
     display: flex;
     justify-content: space-between;
     /* Distribute space between the boxes */
-    margin-bottom: -120px;
 
 }
 
