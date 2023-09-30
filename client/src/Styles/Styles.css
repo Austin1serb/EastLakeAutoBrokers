@@ -12,7 +12,6 @@
     right: 0;
     z-index: 1000;
     transition: background 0.3s ease, opacity 0.3s ease-out;
-    /* Add opacity transition */
 }
 
 .navbar-black {
@@ -23,10 +22,8 @@
     /* Set initial opacity to fade out slowly */
 }
 
-/* Default styles for .logo-image */
 .logo-image {
     max-width: 60%;
-    /* Set the maximum width */
     height: auto;
 }
 
@@ -34,24 +31,24 @@
 @media (max-width: 600px) {
 
     .navbar-top {
-        margin-right: -15px; /* Adjust the margin as needed */
+        margin-right: -15px;
     }
     .navbar-phone {
-        margin-left: -5%; /* Adjust the margin as needed */
+        margin-left: -5%;
     }
 }
 
 /* Media query for even smaller screens */
 @media (max-width: 460px) {
     .logo-image {
-        width: 40%; /* Adjust the width percentage as needed */
+        width: 40%; 
         min-width: 45%;
     }
     .navbar-top {
-        margin-right: -25px; /* Adjust the margin as needed */
+        margin-right: -25px;
     }
     .navbar-phone {
-        margin-left: -5%; /* Adjust the margin as needed */
+        margin-left: -5%;
     }
 }
 @media (max-width: 365px) {
@@ -59,8 +56,6 @@
         display: none;
     }
 }
-
-/* Add more media queries as needed for different screen sizes */
 
 
 .navigation-logo {
@@ -116,7 +111,7 @@
 /* Default styles for .navbar-right */
 .navbar-right {
     margin-left: 40px;
-    /* Set your default margin */
+    
 }
 
 /* Media query for mobile screens */
@@ -298,7 +293,7 @@
     display: flex;
     justify-content: space-between;
     /* Distribute space between the boxes */
-
+    margin-bottom: -120px;
 
 }
 
@@ -339,6 +334,7 @@
     .boxes-container {
         flex-direction: column;
         /* Stack the boxes vertically */
+    
     }
 
     .box {

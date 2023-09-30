@@ -15,6 +15,10 @@
   margin-top: 20px;
   height: 48px;
 }
+.icon{
+  position: relative;
+  top:2px;
+}
 .make{
   position: relative;
   width: 200px;
@@ -62,14 +66,20 @@ button.search-button:hover {
   background-color: #9C0000;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 650px) {
   .search-options {
     flex-direction: column;
     /* Stack elements vertically */
   }
+  .make{
+    width: auto;
+  }
 
   .text-field {
     width: 96%;
+  }
+  .search-bar{
+    
   }
 }
 

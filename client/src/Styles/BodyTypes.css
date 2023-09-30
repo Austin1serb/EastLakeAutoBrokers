@@ -66,6 +66,8 @@
 }
 .body-type-box {
   position: relative; /* Add relative positioning to the container */
+  max-width: 200px;
+  height: auto;
 }
 
 

@@ -14,11 +14,14 @@ const SearchBar = () => {
 
     const [yearOptions, setYearOptions] = useState([]);
     const makeOptions = [
+
         { value: 'BMW', label: <><SiBmw /> BMW</> },
         { value: 'Mercedes', label: <><SiMercedes /> Mercedes</> },
         { value: 'Audi', label: <><SiAudi /> Audi</> },
         { value: 'Toyota', label: <><SiToyota /> Toyota</> },
         { value: 'Chevy', label: <><SiChevrolet /> Chevy</> },
+        { value: 'BMW', label:  <><SiBmw className='icon' /> BMW</> },
+
     ];
     const [modelOptions, setModelOptions] = useState([]);
     const [priceOptions, setPriceOptions] = useState([]);
