@@ -1,0 +1,12 @@
+.map-container{
+    padding-top: 160px;
+    background-color: black;
+    color: white;
+    padding-left: 25px;
+
+}
+
+.map{
+    width: 50%;
+    height: 400px;
+}
