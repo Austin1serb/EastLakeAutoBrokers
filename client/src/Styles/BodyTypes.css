@@ -78,7 +78,7 @@
 }
 
 .body-type-box:hover .image-default {
-  opacity: 1; /* Fade out the default image on hover */
+  opacity: 0; /* Fade out the default image on hover */
 }
 
 .body-type-box:hover .image-hover {
