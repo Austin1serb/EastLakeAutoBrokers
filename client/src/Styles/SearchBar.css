@@ -14,11 +14,13 @@
   gap: 15px;
   margin-top: 20px;
 }
-.icon{
+
+.icon {
   position: relative;
-  top:2px;
+  top: 2px;
 }
-.make{
+
+.make {
   position: relative;
   width: 200px;
   color: black;
@@ -55,7 +57,7 @@ button.search-button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
   margin-left: 15px;
   transition: background-color 0.5s ease;
@@ -71,16 +73,16 @@ button.search-button:hover {
     flex-direction: column;
     /* Stack elements vertically */
   }
-  .make{
+
+  .make {
     width: auto;
   }
 
   .text-field {
     width: 96%;
   }
-  .search-bar{
-    
-  }
+
+  .search-bar {}
 }
 
 @media (max-width: 540px) {

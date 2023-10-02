@@ -20,7 +20,6 @@ const SearchBar = () => {
         { value: 'Audi', label: <><SiAudi /> Audi</> },
         { value: 'Toyota', label: <><SiToyota /> Toyota</> },
         { value: 'Chevy', label: <><SiChevrolet /> Chevy</> },
-        { value: 'BMW', label:  <><SiBmw className='icon' /> BMW</> },
 
     ];
     const [modelOptions, setModelOptions] = useState([]);
@@ -77,8 +76,9 @@ const SearchBar = () => {
 
                 <div className="">
                     <Select
-                    className='make'
+                        className='make'
                         name="make"
+                        placeholder='Select Make'
                         value={makeOptions.find((option) => option.value === formData.make)}
                         onChange={(selectedOption) => handleChange('make', selectedOption.value)}
                         options={makeOptions}

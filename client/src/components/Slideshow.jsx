@@ -36,6 +36,7 @@ function Slideshow() {
                         <div className="slide-number">
                             {images.map((_, idx) => (
                                 <span
+                              
                                     key={idx}
                                     href="#"
                                     className={idx === currentIndex ? 'active' : ''}

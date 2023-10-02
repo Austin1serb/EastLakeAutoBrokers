@@ -13,7 +13,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 20) {
+            if (window.scrollY > 80) {
                 setScrolling(true);
             } else {
                 setScrolling(false);
@@ -40,6 +40,7 @@ const Navbar = () => {
     };
 
     return (
+        <div className="navbar-container">
         <nav className={navbarClasses}>
             <div className="navbar-left">
                 <div className="navbar-logo">
@@ -52,7 +53,7 @@ const Navbar = () => {
                 <div className="navbar-box">
                     <div className="navbar-top">
                         <div className="navbar-address">
-                            <a href="/address">
+                            <a href="/contact">
                                 {isMobile ? (
                                     <LocationOnIcon
                                         className='navigation-logo'
@@ -122,6 +123,7 @@ const Navbar = () => {
 
             </div>
         </nav>
+        </div>
     );
 };
 
