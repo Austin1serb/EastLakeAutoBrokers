@@ -13,13 +13,41 @@ This project is a modern, responsive frontend design created specifically for ca
 
 ## Demo
 
-While the initial offer to deploy this project for a specific dealership was not accepted, the frontend is fully functional and can be viewed [here](#). (Note: Replace this placeholder with your actual live site URL or remove the section if not applicable.)
+While the initial offer to deploy this project for a specific dealership was not accepted, the frontend is moderately functional and can be viewed [here](https://east-lake-auto-brokers-r9kzvl8io-serbyte-development.vercel.app/). 
 
 ## Technologies Used
 
 - HTML5
 - CSS3 (with responsive design via Flexbox/Grid)
 - JavaScript (ES6+)
-- [React.js](https://reactjs.org/) (or any other frameworks/libraries used)
-- [Next.js](https://nextjs.org/) for server-side rendering and static site generation
+- [React.js](https://reactjs.org/)
+- [ExpressJS](https://www.express.com/)
+- [Node.js](https://nodejs.org/en)
+- [MongoDB](https://www.mongodb.com/)
+
+
+
+Setup and Installation
+To get this project running on your local machine, follow these steps:
+
+Clone the repository
+
+```bash```
+git clone https://github.com/YourGithubUsername/car-dealership-frontend.git
+cd car-dealership-frontend
+Install dependencies
+
+```bash```
+npm install
+Run the development server
+
+```bash```
+npm run dev
+# or
+yarn dev
+Open http://localhost:3000 with your browser to see the result.
+
+Contributing
+Feel free to fork this project, make changes, and submit pull requests. Contributions aimed at increasing the project's adaptability, improving functionality, or enhancing the user experience are highly welcome.
+
 
