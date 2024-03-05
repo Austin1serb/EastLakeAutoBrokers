@@ -32,20 +32,23 @@ To get this project running on your local machine, follow these steps:
 
 Clone the repository
 
-```bash```
+```
 git clone https://github.com/YourGithubUsername/car-dealership-frontend.git
 cd car-dealership-frontend
 Install dependencies
+```
 
-```bash```
+```
 npm install
 Run the development server
+```
 
-```bash```
-npm run dev
+```
+npm start
 # or
 yarn dev
 Open http://localhost:3000 with your browser to see the result.
+```
 
 Contributing
 Feel free to fork this project, make changes, and submit pull requests. Contributions aimed at increasing the project's adaptability, improving functionality, or enhancing the user experience are highly welcome.
