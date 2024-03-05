@@ -5,6 +5,7 @@ import SearchBar from './SearchBar'
 import BodyTypes from './BodyTypes'
 
 const Home = () => {
+  
     return (
         <div className="main-page">
             <Slideshow />

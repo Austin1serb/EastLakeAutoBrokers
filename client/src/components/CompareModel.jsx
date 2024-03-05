@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/CompareModel.css';
 
-const CompareModal = ({ selectedCars, onClose }) => {
+const CompareModal = ({ selectedCars, onClose, cars }) => {
     const [selectedCarsData, setSelectedCarsData] = useState([]);
 
     const carImages = {
@@ -12,27 +12,32 @@ const CompareModal = ({ selectedCars, onClose }) => {
         car5: require('../assets/audiQ7.webp'),
     };
 
+    //useEffect(() => {
+    //    // Fetch car details for the selected car IDs from your API
+    //    const fetchSelectedCarsData = async () => {
+    //        const selectedCarsDetails = [];
+
+    //        // Loop through the selected car IDs and fetch their details
+    //        for (const carId of selectedCars) {
+    //            try {
+    //                const response = await fetch(`http://localhost:8000/api/cars/${carId}`);
+    //                const carData = await response.json();
+    //                selectedCarsDetails.push(carData);
+    //            } catch (error) {
+    //                console.error(`Error fetching car details for car ID ${carId}:`, error);
+    //            }
+    //        }
+
+    //        setSelectedCarsData(selectedCarsDetails);
+    //    };
+
+    //    fetchSelectedCarsData();
+    //}, [selectedCars]);
     useEffect(() => {
-        // Fetch car details for the selected car IDs from your API
-        const fetchSelectedCarsData = async () => {
-            const selectedCarsDetails = [];
-
-            // Loop through the selected car IDs and fetch their details
-            for (const carId of selectedCars) {
-                try {
-                    const response = await fetch(`http://localhost:8000/api/cars/${carId}`);
-                    const carData = await response.json();
-                    selectedCarsDetails.push(carData);
-                } catch (error) {
-                    console.error(`Error fetching car details for car ID ${carId}:`, error);
-                }
-            }
-
-            setSelectedCarsData(selectedCarsDetails);
-        };
-
-        fetchSelectedCarsData();
-    }, [selectedCars]);
+        // Instead of fetching data, filter the provided cars array
+        const selectedCarsDetails = cars.filter(car => selectedCars.includes(car._id));
+        setSelectedCarsData(selectedCarsDetails);
+    }, [selectedCars, cars]);
 
     return (
         <div className="compare-modal">

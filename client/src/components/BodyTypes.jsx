@@ -15,7 +15,7 @@ const BodyTypes = () => {
                         <img src={require('../assets/sedan1.jpeg')} alt="Sedans" className='image-default' />
                         <img src={require('../assets/sedan.jpeg')} alt="Sedans" className="image-hover" />
                     </a>
-                        <p >Sedans</p>
+                    <p >Sedans</p>
 
                 </div>
                 <div className="body-type-box">
@@ -48,28 +48,28 @@ const BodyTypes = () => {
                 </div>
                 <div className="body-type-box">
                     <a href="/suvs">
-                    <a href="/wagons">
+
                         <img src={require('../assets/suv1.jpeg')} alt="Sedans" className='image-default' />
                         <img src={require('../assets/suv.jpeg')} alt="Sedans" className="image-hover" />
-                    </a>
+
                     </a>
                     <p>SUVs</p>
                 </div>
                 <div className="body-type-box">
                     <a href="/minivans">
-                    <a href="/wagons">
+
                         <img src={require('../assets/minivan1.jpeg')} alt="Sedans" className='image-default' />
                         <img src={require('../assets/minivan.jpeg')} alt="Sedans" className="image-hover" />
-                    </a>
+
                     </a>
                     <p>Minivans</p>
                 </div>
                 <div className="body-type-box">
                     <a href="/compact-suvs">
-                    <a href="/wagons">
+
                         <img src={require('../assets/crossover1.jpeg')} alt="Sedans" className='image-default' />
                         <img src={require('../assets/crossover.jpeg')} alt="Sedans" className="image-hover" />
-                    </a>
+
                     </a>
                     <p>Compact SUVs</p>
                 </div>
