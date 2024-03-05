@@ -33,8 +33,8 @@ To get this project running on your local machine, follow these steps:
 Clone the repository
 
 ```
-git clone https://github.com/YourGithubUsername/car-dealership-frontend.git
-cd car-dealership-frontend
+git clone https://github.com/Austin1serb/EastLakeAutoBrokers.git
+cd client
 Install dependencies
 ```
 
