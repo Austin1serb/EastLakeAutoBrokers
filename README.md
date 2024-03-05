@@ -35,20 +35,18 @@ Clone the repository
 ```
 git clone https://github.com/Austin1serb/EastLakeAutoBrokers.git
 cd client
+```
 Install dependencies
 ```
-
-```
 npm install
-Run the development server
 ```
-
+Run the development server
 ```
 npm start
 # or
 yarn dev
-Open http://localhost:3000 with your browser to see the result.
 ```
+Open http://localhost:3000 with your browser to see the result.
 
 Contributing
 Feel free to fork this project, make changes, and submit pull requests. Contributions aimed at increasing the project's adaptability, improving functionality, or enhancing the user experience are highly welcome.
