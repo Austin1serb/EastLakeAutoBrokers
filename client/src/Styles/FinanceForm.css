@@ -1,5 +1,22 @@
-.form{
+.form {
     padding-top: 160px;
-    background-color: black;
-    
+    background-color: #282828 !important;
+    height: 1800px;
+    width: 100vw;
+    margin-bottom: 40px;
+}
+
+.form-inner {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.form-bottom {
+    background-color: #282828;
+    height: 330px;
+    width: 100vw;
+    margin: 0 auto;
+    transform: translateY(-15%);
+    margin-bottom: 80px;
 }

@@ -82,11 +82,14 @@ const FinanceForm = () => {
     console.log(errors);
 
     return (
- <div className='form'>
-
-            <JotformEmbed type="text/javascript" src="https://form.jotform.com/232638187531157"/>
+        <div className='form'>
+            <div className='form-inner'>
+                <JotformEmbed type="text/javascript" src="https://form.jotform.com/232638187531157" />
+             
             </div>
-            );
+            <div className='form-bottom'></div>
+        </div>
+    );
 };
 
-            export default FinanceForm;
+export default FinanceForm;
