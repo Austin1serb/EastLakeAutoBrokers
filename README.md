@@ -13,7 +13,7 @@ This project is a modern, responsive frontend design created specifically for ca
 
 ## Demo
 
-While the initial offer to deploy this project for a specific dealership was not accepted, the frontend is moderately functional and can be viewed [here](https://east-lake-auto-brokers-r9kzvl8io-serbyte-development.vercel.app/). 
+While the initial offer to deploy this project for a specific dealership was not accepted, the frontend is moderately functional and can be viewed [here](https://east-lake-auto-brokers.vercel.app/). 
 
 ## Technologies Used
 
