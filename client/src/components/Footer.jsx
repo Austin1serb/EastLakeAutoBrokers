@@ -49,6 +49,26 @@ const Footer = () => {
                     <a href="/sitemap">•  Sitemap</a>
                 </div>
             </footer>
+
+            <div style={{ width: "100%", backgroundColor: "#1a1a1a", borderTop: "1px solid #333", padding: "10px 0", color: "#b3b3b3", fontSize: "14px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "10px", padding: "0 20px" }}>
+                    <a href="https://serbyte.net"  style={{ color: "#b3b3b3", textDecoration: "none", transition: "color 0.2s" }} aria-label="Visit Serbyte Development">
+                        Serbyte Development
+                    </a>
+                    <a href="https://serbyte.net/services" style={{ color: "#b3b3b3", textDecoration: "none", transition: "color 0.2s" }} aria-label="View Serbyte Services">
+                        Services
+                    </a>
+                    <a href="https://serbyte.net/projects" style={{ color: "#b3b3b3", textDecoration: "none", transition: "color 0.2s" }} aria-label="View Serbyte Projects">
+                        Projects
+                    </a>
+                    <a href="https://serbyte.net/insights" style={{ color: "#b3b3b3", textDecoration: "none", transition: "color 0.2s" }} aria-label="Read Serbyte Blog">
+                        Blog
+                    </a>
+                    <a href="https://serbyte.net/contact" style={{ color: "#b3b3b3", textDecoration: "none", transition: "color 0.2s" }} aria-label="Contact Serbyte">
+                        Contact
+                    </a>
+                </div>
+            </div>
         </div>
     );
 };
