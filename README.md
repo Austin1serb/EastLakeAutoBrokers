@@ -7,8 +7,7 @@
 
 ## 🔗 Connect With Me
 📧 Email: [info@serbyte.net](mailto:info@serbyte.net)  
-🔗 LinkedIn: [Austin Serb](https://www.linkedin.com/in/austinserb)  
-
+🔗 LinkedIn: [Austin Serb](https://www.linkedin.com/in/austin-serb)  
 
 # Car Dealership Frontend
 
