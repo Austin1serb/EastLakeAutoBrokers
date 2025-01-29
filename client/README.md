@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+## 🚀 About Serbyte Development
+[Serbyte](https://www.serbyte.net/) is a **Seattle-based Web Development & Branding Agency** that builds **custom websites, AI integrations, and SEO-driven solutions** to help businesses scale.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🌎 Explore My Work
+🔹 **Need a cutting-edge website?** Visit: [Serbyte Web Design & Development](https://www.serbyte.net/)  
+🔹 **Looking for a Full-Stack Developer?** See my work: [Austin Serb’s Portfolio](https://www.serbyte.net/recruiter)  
 
-## Available Scripts
+## 🔗 Connect With Me
+📧 Email: [info@serbyte.net](mailto:info@serbyte.net)  
+🔗 LinkedIn: [Austin Serb](https://www.linkedin.com/in/austin-serb)  
 
-In the project directory, you can run:
+# Car Dealership Frontend
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is a modern, responsive frontend design created specifically for car dealerships. It aims to provide an engaging and user-friendly interface for potential car buyers, showcasing available vehicles with detailed information. Despite being designed with a specific dealership in mind, this frontend template can be adapted for various automotive sales platforms.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Features
 
-### `npm test`
+- **Dynamic Vehicle Listing Page**: Easily browse through available vehicles with options to filter by model, price, year, etc.
+- **Detailed Vehicle Profiles**: View detailed information about each vehicle, including specifications, photos, and pricing.
+- **Responsive Design**: Crafted to provide an optimal viewing experience across a wide range of devices, from mobile phones to desktop monitors.
+- **High Performance**: Built using modern web technologies for fast load times and smooth interaction.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
 
-### `npm run build`
+While the initial offer to deploy this project for a specific dealership was not accepted, the frontend is moderately functional and can be viewed [here](https://east-lake-auto-brokers.vercel.app/). 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML5
+- CSS3 (with responsive design via Flexbox/Grid)
+- JavaScript (ES6+)
+- [React.js](https://reactjs.org/)
+- [ExpressJS](https://www.express.com/)
+- [Node.js](https://nodejs.org/en)
+- [MongoDB](https://www.mongodb.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Setup and Installation
+To get this project running on your local machine, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+git clone https://github.com/Austin1serb/EastLakeAutoBrokers.git
+cd client
+```
+Install dependencies
+```
+npm install
+```
+Run the development server
+```
+npm start
+# or
+yarn dev
+```
+Open http://localhost:3000 with your browser to see the result.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributing
+Feel free to fork this project, make changes, and submit pull requests. Contributions aimed at increasing the project's adaptability, improving functionality, or enhancing the user experience are highly welcome.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
